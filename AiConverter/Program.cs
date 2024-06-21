@@ -50,6 +50,7 @@ namespace AiConverter
             if (zonesTargets == "targets")
             {
                 Console.WriteLine("Targets are not implemented in this verion.");
+                return;
             }
             else if (zonesTargets == "zones")
             {
@@ -113,24 +114,28 @@ namespace AiConverter
                 case "triupleft":
                 case "triangle up left":
                     shape = 1;
+                    Height = 0;
                     break;
                 case "2":
                 case "tur":
                 case "triupright":
                 case "triangle up right":
                     shape = 2;
+                    Height = 0;
                     break;
                 case "3":
                 case "tbl":
                 case "tribotleft":
                 case "triangle bottom left":
                     shape = 3;
+                    Height = 0;
                     break;
                 case "4":
                 case "tbr":
                 case "tribotright":
                 case "triangle bottom right":
                     shape = 4;
+                    Height = 0;
                     break;
                 default:
                     Console.WriteLine("Incorrect Zone Shape!");
